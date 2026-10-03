@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- معلومات الموقع -->
+  <title>PREM RP | الموقع الرسمي</title>
+
+  <meta
+    name="description"
+    content="PREM RP - الموقع الرسمي. مرحباً بك في PREM RP."
+  >
+
+  <meta
+    name="keywords"
+    content="PREM RP, PREMRP, PREM RP Server, PREM RP سيرفر, PREM"
+  >
+
+  <meta name="author" content="PREM RP">
+
+  <meta name="robots" content="index, follow">
+
+  <meta name="theme-color" content="#09000f">
+
+  <!-- رابط الموقع الأساسي -->
+  <link
+    rel="canonical"
+    href="https://younessttpp-glitch.github.io/--RP/"
+  >
+
+  <!-- مشاركة الموقع -->
+  <meta property="og:type" content="website">
+
+  <meta
+    property="og:title"
+    content="PREM RP | الموقع الرسمي"
+  >
+
+  <meta
+    property="og:description"
+    content="مرحباً بك في الموقع الرسمي لـ PREM RP."
+  >
+
+  <meta
+    property="og:url"
+    content="https://younessttpp-glitch.github.io/--RP/"
+  >
+
+  <meta
+    property="og:site_name"
+    content="PREM RP"
+  >
+
+  <!-- أيقونة الموقع -->
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2309000f'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%23a000ff'%3EP%3C/text%3E%3C/svg%3E"
+  >
+
+  <style>
+
+    /* =========================
+       الإعدادات العامة
+    ========================= */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background:
+        radial-gradient(
+          circle at 50% 40%,
+          #2b063b 0%,
+          #12001b 30%,
+          #080009 65%,
+          #000000 100%
+        );
+
+      font-family:
+        Arial,
+        Tahoma,
+        sans-serif;
+
+      color: #ffffff;
+
+      overflow: hidden;
+    }
+
+    /* =========================
+       خلفية متحركة
+    ========================= */
+
+    body::before {
+      content: "";
+
+      position: fixed;
+
+      width: 450px;
+      height: 450px;
+
+      background: #a000ff;
+
+      border-radius: 50%;
+
+      filter: blur(180px);
+
+      opacity: 0.12;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      pointer-events: none;
+    }
+
+    /* =========================
+       المحتوى
+    ========================= */
+
+    .container {
+      position: relative;
+
+      z-index: 2;
+
+      width: 100%;
+
+      max-width: 700px;
+
+      text-align: center;
+
+      padding: 30px;
+    }
+
+    /* =========================
+       العنوان
+    ========================= */
+
+    .title {
+      font-size: 64px;
+
+      font-weight: 900;
+
+      letter-spacing: 5px;
+
+      margin-bottom: 15px;
+
+      color: #ffffff;
+
+      text-shadow:
+        0 0 10px rgba(160, 0, 255, 0.8),
+        0 0 30px rgba(160, 0, 255, 0.5),
+        0 0 60px rgba(160, 0, 255, 0.25);
+    }
+
+    .subtitle {
+      font-size: 17px;
+
+      color: #bdbdbd;
+
+      margin-bottom: 40px;
+
+      line-height: 1.8;
+    }
+
+    /* =========================
+       الزر
+    ========================= */
+
+    .rp-button {
+      position: relative;
+
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      min-width: 250px;
+
+      padding: 18px 55px;
+
+      font-size: 24px;
+
+      font-weight: 800;
+
+      letter-spacing: 1px;
+
+      color: #ffffff;
+
+      background:
+        linear-gradient(
+          135deg,
+          #171017,
+          #0c0c0c
+        );
+
+      border: 2px solid #a000ff;
+
+      border-radius: 14px;
+
+      cursor: pointer;
+
+      box-shadow:
+        0 0 15px rgba(160, 0, 255, 0.35),
+        inset 0 0 15px rgba(160, 0, 255, 0.05);
+
+      transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .rp-button:hover {
+      transform: translateY(-4px) scale(1.04);
+
+      background:
+        linear-gradient(
+          135deg,
+          #a000ff,
+          #6800a8
+        );
+
+      box-shadow:
+        0 0 20px #a000ff,
+        0 0 50px rgba(160, 0, 255, 0.6);
+    }
+
+    .rp-button:active {
+      transform: scale(0.97);
+    }
+
+    /* =========================
+       الرسالة
+    ========================= */
+
+    .message {
+      margin-top: 28px;
+
+      font-size: 18px;
+
+      color: #e0c4ff;
+
+      opacity: 0;
+
+      transform: translateY(10px);
+
+      transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+    }
+
+    .message.show {
+      opacity: 1;
+
+      transform: translateY(0);
+    }
+
+    /* =========================
+       الفوتر
+    ========================= */
+
+    .footer {
+      position: fixed;
+
+      bottom: 18px;
+
+      left: 0;
+
+      width: 100%;
+
+      text-align: center;
+
+      font-size: 13px;
+
+      color: #666666;
+
+      z-index: 2;
+    }
+
+    /* =========================
+       الجوال
+    ========================= */
+
+    @media (max-width: 600px) {
+
+      .container {
+        padding: 20px;
+      }
+
+      .title {
+        font-size: 42px;
+
+        letter-spacing: 3px;
+      }
+
+      .subtitle {
+        font-size: 15px;
+
+        margin-bottom: 30px;
+      }
+
+      .rp-button {
+        min-width: 220px;
+
+        padding: 16px 40px;
+
+        font-size: 21px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1 class="title">
+      PREM RP
+    </h1>
+
+    <p class="subtitle">
+      الموقع الرسمي لـ PREM RP
+      <br>
+      مرحباً بك 👋
+    </p>
+
+    <button
+      class="rp-button"
+      type="button"
+      onclick="showMessage()"
+      aria-label="الدخول إلى PREM RP"
+    >
+      PREM RP
+    </button>
+
+    <p
+      id="message"
+      class="message"
+      aria-live="polite"
+    >
+      مرحباً بك في PREM RP 💜
+    </p>
+
+  </main>
+
+  <footer class="footer">
+    © 2026 PREM RP — جميع الحقوق محفوظة
+  </footer>
+
+  <script>
+
+    function showMessage() {
+
+      const message =
+        document.getElementById("message");
+
+      message.classList.add("show");
+
+    }
+
+  </script>
